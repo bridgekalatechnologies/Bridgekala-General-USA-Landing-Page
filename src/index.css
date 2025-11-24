@@ -14,3 +14,21 @@
 .ChampionGothicfont {
   font-family: "MyFont", sans-serif;
 }
+
+.bgGradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #560099,
+    #6100ab,
+    #6b00be,
+    #7600d1,
+    #8100e5,
+    #8100e5,
+    #8100e5,
+    #8100e5,
+    #7600d1,
+    #6b00be,
+    #6100ab,
+    #560099
+  );
+}

@@ -24,11 +24,12 @@ export default function HeroSection() {
       {/* hero para */}
       <p className="text-center font-medium text-[11px] w-screen">
         From social media to performance ads{" "}
-        <div className="text-[#9000FF] font-semibold">
+        <span className="text-[#9000FF] font-semibold block">
           we build brands, generate leads, and scale revenue
-        </div>{" "}
+        </span>{" "}
         with proven marketing systems.
       </p>
+
       {/* brands logo */}
       <div className="relative left-[8%] w-full flex justify-center">
         <img
@@ -37,32 +38,32 @@ export default function HeroSection() {
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/2.webp"
           className="inline-block bg-amber-600 size-8 rounded-full relative -left-2"
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/3.webp"
           className="inline-block bg-green-600 size-8 rounded-full relative -left-4"
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/4.webp"
           className="inline-block bg-red-600 size-8 rounded-full relative -left-6"
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/6.webp"
           className="inline-block bg-purple-600 size-8 rounded-full relative -left-7"
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/5.webp"
           className="inline-block bg-green-600 size-8 rounded-full relative -left-8"
           alt=""
         />
         <img
-          src="/brands/1.webp"
+          src="/brands/7.webp"
           className="inline-block bg-blue-600 size-8 rounded-full relative -left-10"
           alt=""
         />

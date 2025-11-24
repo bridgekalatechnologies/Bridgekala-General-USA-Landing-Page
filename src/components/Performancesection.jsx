@@ -7,7 +7,7 @@ export default function Performancesection() {
     "33 Days avg. time to profitability",
   ];
   return (
-    <div className="bg-[#9000FF] w-screen p-10 rounded-lg Montserratfont my-5">
+    <div className="bgGradient w-screen p-10 rounded-lg Montserratfont mt-5">
       <div className="w-full bg-white rounded-lg flex flex-col justify-center p-3 gap-3">
         <h1 className="text-[12px] font-medium text-center">
           The Only Numbers That Matter
@@ -16,7 +16,7 @@ export default function Performancesection() {
           return (
             <div
               key={i}
-              className="bg-[#9000FF] text-white flex justify-center items-center text-center p-5 rounded-lg h-30 font-semibold w-full"
+              className="bgGradient text-white flex justify-center items-center text-center p-5 rounded-lg h-30 font-semibold w-full"
             >
               <h1 className="text-2xl">{card}</h1>
             </div>
