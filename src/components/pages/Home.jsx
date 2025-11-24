@@ -2,6 +2,7 @@ import Performancesection from "../Performancesection";
 import HeroSection from "../HeroSection";
 import WhyChooseUs from "../WhyChooseUs";
 import Services from "../Services";
+import HowWeWork from "../HowWeWork";
 
 export default function () {
   return (
@@ -10,6 +11,7 @@ export default function () {
       <Performancesection />
       <WhyChooseUs />
       <Services />
+      <HowWeWork />
     </div>
   );
 }

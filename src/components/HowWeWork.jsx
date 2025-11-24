@@ -1,0 +1,76 @@
+import { Lightbulb, Puzzle, Scale3D, Search } from "lucide-react";
+
+export default function HowWeWork() {
+  return (
+    <div className="text-center flex flex-col gap-5">
+      <div>
+        <h1 className="text-[#9000FF] font-bold text-2xl">HOW WE WORK</h1>
+        <h2 className="text-[11px] font-medium">
+          Our Simple 4-Step Growth System
+        </h2>
+      </div>
+      {/* cards */}
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-6">
+          {/* first */}
+          <div className="text-start text-white w-fit relative">
+            <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
+              <h1 className="text-[8px]">Step 1</h1>
+              <h2 className="text-[8px]">Discover & Analyse</h2>
+              <p className="text-[8px]">
+                We study your brand, market, competition, and customers.
+              </p>
+            </div>
+            <div className="border-2 border-white absolute w-fit rounded-full -bottom-2 -right-3">
+              <Search className="bg-[#9000FF] text-white rounded-full p-1" />
+            </div>
+          </div>
+          {/* second */}
+          <div className="text-start text-white w-fit relative">
+            <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
+              <h1 className="text-[8px]">Step 2</h1>
+              <h2 className="text-[8px]">Strategy & Planning</h2>
+              <p className="text-[8px]">
+                We create a high-conversion marketing plan tailored to your
+                business goals.
+              </p>
+            </div>
+            <div className="border-2 border-white absolute w-fit rounded-full -bottom-2 -left-3">
+              <Puzzle className="bg-[#9000FF] text-white rounded-full p-1" />
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-6">
+          {/* third */}
+          <div className="text-start text-white w-fit relative">
+            <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
+              <h1 className="text-[8px]">Step 3</h1>
+              <h2 className="text-[8px]">Creative + Execution</h2>
+              <p className="text-[8px]">
+                Our team develops content, runs ads, and manages campaigns
+                across platforms.
+              </p>
+            </div>
+            <div className="border-2 border-white absolute w-fit rounded-full -top-2 -right-3">
+              <Lightbulb className="bg-[#9000FF] text-white rounded-full p-1" />
+            </div>
+          </div>
+          {/* fourth */}
+          <div className="text-start text-white w-fit relative">
+            <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
+              <h1 className="text-[8px]">Step 4</h1>
+              <h2 className="text-[8px]">Optimise & Scale</h2>
+              <p className="text-[8px]">
+                Weekly tracking, testing, reporting, and scaling to maximise
+                ROI.
+              </p>
+            </div>
+            <div className="border-2 border-white absolute w-fit rounded-full -top-2 -left-3">
+              <Scale3D className="bg-[#9000FF] text-white rounded-full p-1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
