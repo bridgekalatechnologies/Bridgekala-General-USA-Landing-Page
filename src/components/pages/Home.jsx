@@ -3,6 +3,7 @@ import HeroSection from "../HeroSection";
 import WhyChooseUs from "../WhyChooseUs";
 import Services from "../Services";
 import HowWeWork from "../HowWeWork";
+import OurProjects from "../OurProjects";
 
 export default function () {
   return (
@@ -12,6 +13,7 @@ export default function () {
       <WhyChooseUs />
       <Services />
       <HowWeWork />
+      <OurProjects />
     </div>
   );
 }
