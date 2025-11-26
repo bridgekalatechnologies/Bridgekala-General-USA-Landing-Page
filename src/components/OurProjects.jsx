@@ -10,7 +10,7 @@ export default function OurProjects() {
       description:
         "Complete digital marketing system: branding, ads, content & influencer-led funnel.",
       img: "/projects/powerchew.png",
-      video: "",
+      video: "/projects/powerchew.mp4",
     },
     {
       title: "Grandma Secret Recipe",
@@ -18,7 +18,7 @@ export default function OurProjects() {
       description:
         "Created a full brand revamp + performance funnel generating consistent showroom traffic.",
       img: "/projects/grandma.png",
-      video: "",
+      video: "/projects/grandma.mp4",
     },
     {
       title: "House of Rings",
@@ -26,7 +26,7 @@ export default function OurProjects() {
       description:
         " Developed ads + content + strategy, helping them expand into multiple locations.",
       img: "/projects/hor.png",
-      video: "",
+      video: "/projects/hor.mp4",
     },
     {
       title: "Dynatone",
@@ -34,7 +34,7 @@ export default function OurProjects() {
       description:
         "End-to-end content, web, and ads to scale their brand presence.",
       img: "/projects/dynatone.png",
-      video: "",
+      video: "/projects/dynatone.mp4",
     },
     {
       title: "New Age Diamonds",
@@ -42,7 +42,7 @@ export default function OurProjects() {
       description:
         "Storytelling + campaigns + footfall strategy across all stores.",
       img: "/projects/newage.png",
-      video: "",
+      video: "/projects/newage.mp4",
     },
   ];
 
@@ -94,9 +94,11 @@ export default function OurProjects() {
             alt=""
           />
           <video
-            src={current.img}
+            src={current.video}
             className="bg-[#d8d8d8] w-33 h-55 rounded-xl"
             alt=""
+            autoPlay
+            muted
           ></video>
         </div>
 

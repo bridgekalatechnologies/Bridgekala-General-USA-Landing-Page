@@ -15,10 +15,11 @@ export default function HowWeWork() {
           {/* first */}
           <div className="text-start text-white w-fit relative">
             <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
-              <h1 className="text-[8px]">Step 1</h1>
-              <h2 className="text-[8px]">Discover & Analyse</h2>
+              <h1 className="text-[8px] font-medium">Step 1</h1>
+              <h2 className="text-[8px] font-bold">Strategy & Planning</h2>
               <p className="text-[8px]">
-                We study your brand, market, competition, and customers.
+                We analyze your brand, and business goals to create a clear
+                growth roadmap.
               </p>
             </div>
             <div className="border-2 border-white absolute w-fit rounded-full -bottom-2 -right-3">
@@ -28,11 +29,11 @@ export default function HowWeWork() {
           {/* second */}
           <div className="text-start text-white w-fit relative">
             <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
-              <h1 className="text-[8px]">Step 2</h1>
-              <h2 className="text-[8px]">Strategy & Planning</h2>
+              <h1 className="text-[8px] font-medium">Step 2</h1>
+              <h2 className="text-[8px] font-bold">Content Production</h2>
               <p className="text-[8px]">
-                We create a high-conversion marketing plan tailored to your
-                business goals.
+                We produce high-quality content and creatives that build
+                authority.
               </p>
             </div>
             <div className="border-2 border-white absolute w-fit rounded-full -bottom-2 -left-3">
@@ -44,11 +45,11 @@ export default function HowWeWork() {
           {/* third */}
           <div className="text-start text-white w-fit relative">
             <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
-              <h1 className="text-[8px]">Step 3</h1>
-              <h2 className="text-[8px]">Creative + Execution</h2>
+              <h1 className="text-[8px] font-medium">Step 3</h1>
+              <h2 className="text-[8px] font-bold">Performance Marketing</h2>
               <p className="text-[8px]">
-                Our team develops content, runs ads, and manages campaigns
-                across platforms.
+                data-driven advertising across Meta and Google to convert
+                attention into leads.
               </p>
             </div>
             <div className="border-2 border-white absolute w-fit rounded-full -top-2 -right-3">
@@ -58,11 +59,11 @@ export default function HowWeWork() {
           {/* fourth */}
           <div className="text-start text-white w-fit relative">
             <div className="bg-[#9000FF] p-3 rounded-xl w-35 h-22">
-              <h1 className="text-[8px]">Step 4</h1>
-              <h2 className="text-[8px]">Optimise & Scale</h2>
+              <h1 className="text-[8px] font-medium">Step 4</h1>
+              <h2 className="text-[8px] font-bold">Sales & Automation</h2>
               <p className="text-[8px]">
-                Weekly tracking, testing, reporting, and scaling to maximise
-                ROI.
+                We build funnels and CRM flows that
+                convert leads into consistent revenue.
               </p>
             </div>
             <div className="border-2 border-white absolute w-fit rounded-full -top-2 -left-3">
