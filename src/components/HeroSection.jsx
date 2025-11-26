@@ -35,7 +35,7 @@ export default function HeroSection({ onScrollToForm }) {
       />
 
       {/* hero paragraph */}
-      <p className="text-center font-medium text-[12px] w-[38]">
+      <p className="text-center font-medium text-[12px]">
         From social media to performance ads{" "}
         <span className="text-[#9000FF] font-semibold block">
           we build brands, generate leads, and scale
