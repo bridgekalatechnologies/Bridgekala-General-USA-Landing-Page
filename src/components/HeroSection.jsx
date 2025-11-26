@@ -1,6 +1,17 @@
+import { motion } from "framer-motion";
 import CtaBtn from "./CtaBtn";
 
 export default function HeroSection({ onScrollToForm }) {
+  const logos = [
+    "/brands/1.webp",
+    "/brands/2.webp",
+    "/brands/3.webp",
+    "/brands/4.webp",
+    "/brands/6.webp",
+    "/brands/5.webp",
+    "/brands/7.webp",
+  ];
+
   return (
     <>
       {/* slots */}
@@ -8,21 +19,23 @@ export default function HeroSection({ onScrollToForm }) {
         <span className="inline-block size-3 bg-[#4bf14b] rounded-full animate-pulse transition-all ease-in-out"></span>
         <span className="font-medium">2 Slots live</span>
       </div>
+
       {/* hero line */}
       <h1 className="text-center ChampionGothicfont text-2xl w-screen">
         Grow Your Business With{" "}
         <span className="text-[#9000FF]">High-Impact Marketing</span> that
         Delivers Real Sales
       </h1>
-      {/* hero-img */}
+
+      {/* hero image */}
       <img
-        className="bg-[#d8d3d3] w-full h-50 rounded-2xl"
+        className="bg-[#d8d3d3] w-full h-50 rounded-2xl mt-3"
         src="/heroimg.jpg"
-        alt=""
+        alt="Hero"
       />
 
-      {/* hero para */}
-      <p className="text-center font-medium text-[11px] w-screen">
+      {/* hero paragraph */}
+      <p className="text-center font-medium text-[11px] w-screen mt-3">
         From social media to performance ads{" "}
         <span className="text-[#9000FF] font-semibold block">
           we build brands, generate leads, and scale revenue
@@ -30,48 +43,31 @@ export default function HeroSection({ onScrollToForm }) {
         with proven marketing systems.
       </p>
 
-      {/* brands logo */}
-      <div className="relative left-[8%] w-full flex justify-center">
-        <img
-          src="/brands/1.webp"
-          className="inline-block bg-blue-600 size-8 rounded-full relative"
-          alt=""
-        />
-        <img
-          src="/brands/2.webp"
-          className="inline-block bg-amber-600 size-8 rounded-full relative -left-2"
-          alt=""
-        />
-        <img
-          src="/brands/3.webp"
-          className="inline-block bg-green-600 size-8 rounded-full relative -left-4"
-          alt=""
-        />
-        <img
-          src="/brands/4.webp"
-          className="inline-block bg-red-600 size-8 rounded-full relative -left-6"
-          alt=""
-        />
-        <img
-          src="/brands/6.webp"
-          className="inline-block bg-purple-600 size-8 rounded-full relative -left-7"
-          alt=""
-        />
-        <img
-          src="/brands/5.webp"
-          className="inline-block bg-green-600 size-8 rounded-full relative -left-8"
-          alt=""
-        />
-        <img
-          src="/brands/7.webp"
-          className="inline-block bg-blue-600 size-8 rounded-full relative -left-10"
-          alt=""
-        />
+      {/* brand logos */}
+      <div className="relative w-full flex justify-center mt-4">
+        {logos.map((src, i) => (
+          <motion.img
+            key={i}
+            src={src}
+            className="inline-block size-8 rounded-full"
+            style={{ marginLeft: i === 0 ? 0 : -12 }} // perfect overlap
+            initial={{ opacity: 0, x: -60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.6,
+              delay: i * 0.18,
+              ease: "easeOut",
+            }}
+            alt="Brand"
+          />
+        ))}
       </div>
-      <p className="text-center font-medium text-[12px]">
+
+      <p className="text-center font-medium text-[12px] mt-2">
         Trusted by founders of <br /> 20+ breakout D2C brands
       </p>
 
+      {/* CTA button */}
       <CtaBtn text="Book 4X Strategy Call" link="" onClick={onScrollToForm} />
     </>
   );

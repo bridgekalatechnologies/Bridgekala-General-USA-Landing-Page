@@ -22,7 +22,6 @@ export default function HomePage() {
   return (
     <div className="w-screen flex flex-col items-center gap-5 p-10 Montserratfont">
       <HeroSection onScrollToForm={scrollToForm} />
-
       <Performancesection />
       <WhyChooseUs />
       <HowWeWork />
