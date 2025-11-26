@@ -4,6 +4,7 @@ import WhyChooseUs from "../WhyChooseUs";
 import Services from "../Services";
 import HowWeWork from "../HowWeWork";
 import OurProjects from "../OurProjects";
+import AboutUs from "../AboutUs";
 
 export default function () {
   return (
@@ -14,6 +15,7 @@ export default function () {
       <Services />
       <HowWeWork />
       <OurProjects />
+      <AboutUs />
     </div>
   );
 }

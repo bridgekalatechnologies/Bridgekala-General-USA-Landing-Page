@@ -11,7 +11,6 @@ export default function Services() {
     "Landing Pages",
     "Strategy",
     "Performance",
-    "Revenue",
   ];
   return (
     <div className="text-center bgGradient text-white w-screen rounded-lg p-5 flex flex-col gap-4">
