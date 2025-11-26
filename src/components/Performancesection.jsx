@@ -9,7 +9,7 @@ export default function Performancesection() {
   return (
     <div className="bgGradient w-screen p-10 rounded-lg Montserratfont mt-5">
       <div className="w-full bg-white rounded-lg flex flex-col justify-center p-3 gap-3">
-        <h1 className="text-[12px] font-medium text-center">
+        <h1 className="text-[12px] font-medium text-center font-semibold">
           The Only Numbers That Matter
         </h1>
         {cards.map((card, i) => {
@@ -22,10 +22,11 @@ export default function Performancesection() {
             </div>
           );
         })}
-       <div>
-         <p className="text-center text-[10px] font-semibold">REAL PERFORMANCE. NOT PROMISES.</p>
-        <p className="text-center text-[8px] font-medium">(Updated 1 Jun, 2025)</p>
-       </div>
+        <div>
+          <p className="text-center text-[10px] font-semibold">
+            REAL PERFORMANCE. NOT PROMISES.
+          </p>
+        </div>
       </div>
     </div>
   );

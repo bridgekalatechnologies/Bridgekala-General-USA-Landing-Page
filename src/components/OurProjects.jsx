@@ -100,7 +100,7 @@ export default function OurProjects() {
             autoPlay
             muted
             playsInline
-            playsinline
+            webkit-playsinline
           ></video>
         </div>
 

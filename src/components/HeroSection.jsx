@@ -15,13 +15,13 @@ export default function HeroSection({ onScrollToForm }) {
   return (
     <>
       {/* slots */}
-      <div className="bg-black text-white flex gap-2 justify-center items-center w-50 rounded-4xl p-2 h-fit mb-5">
+      <div className="bg-black text-white flex gap-2 justify-center items-center w-50 rounded-4xl p-2 h-fit">
         <span className="inline-block size-3 bg-[#4bf14b] rounded-full animate-pulse transition-all ease-in-out"></span>
         <span className="font-medium">2 Slots live</span>
       </div>
 
       {/* hero line */}
-      <h1 className="text-center ChampionGothicfont text-2xl w-screen">
+      <h1 className="text-center ChampionGothicfont text-[27px] w-screen">
         Grow Your Business With{" "}
         <span className="text-[#9000FF]">High-Impact Marketing</span> that
         Delivers Real Sales
@@ -35,12 +35,12 @@ export default function HeroSection({ onScrollToForm }) {
       />
 
       {/* hero paragraph */}
-      <p className="text-center font-medium text-[11px] w-screen">
+      <p className="text-center font-medium text-[12px] w-[38]">
         From social media to performance ads{" "}
         <span className="text-[#9000FF] font-semibold block">
-          we build brands, generate leads, and scale revenue
+          we build brands, generate leads, and scale
         </span>{" "}
-        with proven marketing systems.
+       <span className="text-[#9000FF] font-semibold">revenue</span> with proven marketing systems.
       </p>
 
       {/* brand logos */}
