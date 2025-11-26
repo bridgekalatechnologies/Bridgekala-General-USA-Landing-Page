@@ -101,6 +101,7 @@ export default function OurProjects() {
             muted
             playsInline
             webkit-playsinline
+            controls={false}
           ></video>
         </div>
 
