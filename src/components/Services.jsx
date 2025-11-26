@@ -1,4 +1,5 @@
 import { CircleCheck } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const servicesData = [
@@ -12,27 +13,36 @@ export default function Services() {
     "Strategy",
     "Performance",
   ];
+
   return (
     <div className="text-center bgGradient text-white w-screen rounded-lg p-5 flex flex-col gap-4">
       <h1 className="font-bold text-2xl">
         We Don't Sell Services. <br /> We Sell Results.
       </h1>
       <h2 className="text-[12px]">But if you really want a list…</h2>
+
       <div className="w-full flex flex-col items-center gap-3">
         {servicesData.map((service, i) => {
+          const fromLeft = i % 2 === 0; // alternate animation
+
           return (
-            <div className="flex justify-center bg-white text-black w-70 rounded-4xl p-1">
-              <div
-                key={i}
-                className="flex items-center gap-2 text-[12px] w-60 pl-8"
-              >
-                <CircleCheck className="text-white bg-[#19cc19] rounded-full size-4" />{" "}
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: fromLeft ? -80 : 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
+              viewport={{ once: true }}
+              className="flex justify-center bg-white text-black w-70 rounded-4xl p-1"
+            >
+              <div className="flex items-center gap-2 text-[12px] w-60 pl-8">
+                <CircleCheck className="text-white bg-[#19cc19] rounded-full size-4" />
                 {service}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
+
       <div>
         <h1 className="text-[11px]">
           We're technically a full-service agency. But the truth is:

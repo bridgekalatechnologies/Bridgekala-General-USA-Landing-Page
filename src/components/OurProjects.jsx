@@ -5,19 +5,19 @@ export default function OurProjects() {
   // ARRAY OF OBJECTS
   const projects = [
     {
-      title: "Furniture Park",
-      subtitle: "3X Walk-ins",
-      description:
-        "Created a full brand revamp + performance funnel generating consistent showroom traffic.",
-      img: "",
-      video: "",
-    },
-    {
       title: "Power Chew",
       subtitle: "UK + Europe Expansion",
       description:
         "Complete digital marketing system: branding, ads, content & influencer-led funnel.",
-      img: "",
+      img: "/projects/powerchew.png",
+      video: "",
+    },
+    {
+      title: "Grandma Secret Recipe",
+      subtitle: "4X ROI Capital",
+      description:
+        "Created a full brand revamp + performance funnel generating consistent showroom traffic.",
+      img: "/projects/grandma.png",
       video: "",
     },
     {
@@ -25,7 +25,7 @@ export default function OurProjects() {
       subtitle: "Franchise Growth",
       description:
         " Developed ads + content + strategy, helping them expand into multiple locations.",
-      img: "",
+      img: "/projects/hor.png",
       video: "",
     },
     {
@@ -33,7 +33,7 @@ export default function OurProjects() {
       subtitle: "Product Marketing System",
       description:
         "End-to-end content, web, and ads to scale their brand presence.",
-      img: "",
+      img: "/projects/dynatone.png",
       video: "",
     },
     {
@@ -41,7 +41,7 @@ export default function OurProjects() {
       subtitle: "Luxury Positioning",
       description:
         "Storytelling + campaigns + footfall strategy across all stores.",
-      img: "",
+      img: "/projects/newage.png",
       video: "",
     },
   ];
