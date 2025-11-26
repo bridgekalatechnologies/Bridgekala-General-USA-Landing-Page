@@ -99,6 +99,8 @@ export default function OurProjects() {
             alt=""
             autoPlay
             muted
+            playsInline
+            playsinline
           ></video>
         </div>
 
