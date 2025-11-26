@@ -8,6 +8,7 @@ import AboutUs from "../AboutUs";
 import { Check } from "lucide-react";
 import Testimonials from "../Testimonials";
 import Faqs from "../Faqs";
+import Form from "../Form";
 
 export default function () {
   return (
@@ -62,6 +63,7 @@ export default function () {
       </div>
       <Testimonials />
       <Faqs />
+      <Form />
     </div>
   );
 }
