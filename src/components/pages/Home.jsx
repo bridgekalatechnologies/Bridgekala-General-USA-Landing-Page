@@ -7,6 +7,7 @@ import OurProjects from "../OurProjects";
 import AboutUs from "../AboutUs";
 import { Check } from "lucide-react";
 import Testimonials from "../Testimonials";
+import Faqs from "../Faqs";
 
 export default function () {
   return (
@@ -55,9 +56,12 @@ export default function () {
         <p className="text-center text-sm w-65">
           Let’s build a marketing system that grows your brand consistently.
         </p>
-        <button className="bg-[#9000FF] rounded-xl py-1 text-white font-bold">Book Free Strategy Call</button>
+        <button className="bg-[#9000FF] rounded-xl py-1 text-white font-bold">
+          Book Free Strategy Call
+        </button>
       </div>
-      <Testimonials/>
+      <Testimonials />
+      <Faqs />
     </div>
   );
 }
