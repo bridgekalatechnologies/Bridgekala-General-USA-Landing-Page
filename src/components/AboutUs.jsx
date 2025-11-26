@@ -26,7 +26,7 @@ export default function AboutUs({ onScrollToForm }) {
           </span>
         </div>
       </div>
-      <button onClick={onScrollToForm} className="bg-white text-[#9000FF] w-55 font-bold rounded-3xl mt-3">
+      <button onClick={onScrollToForm} className="bg-white text-[#9000FF] w-55 font-bold rounded-3xl mt-3 animate-float">
         Book Free Strategy Call
       </button>
     </div>

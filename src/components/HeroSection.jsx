@@ -29,13 +29,13 @@ export default function HeroSection({ onScrollToForm }) {
 
       {/* hero image */}
       <img
-        className="bg-[#d8d3d3] w-full h-50 rounded-2xl mt-3"
+        className="bg-[#d8d3d3] w-full h-50 rounded-2xl"
         src="/heroimg.jpg"
         alt="Hero"
       />
 
       {/* hero paragraph */}
-      <p className="text-center font-medium text-[11px] w-screen mt-3">
+      <p className="text-center font-medium text-[11px] w-screen">
         From social media to performance ads{" "}
         <span className="text-[#9000FF] font-semibold block">
           we build brands, generate leads, and scale revenue
@@ -44,7 +44,7 @@ export default function HeroSection({ onScrollToForm }) {
       </p>
 
       {/* brand logos */}
-      <div className="relative w-full flex justify-center mt-4">
+      <div className="relative w-full flex justify-center">
         {logos.map((src, i) => (
           <motion.img
             key={i}
@@ -63,7 +63,7 @@ export default function HeroSection({ onScrollToForm }) {
         ))}
       </div>
 
-      <p className="text-center font-medium text-[12px] mt-2">
+      <p className="text-center font-medium text-[12px]">
         Trusted by founders of <br /> 20+ breakout D2C brands
       </p>
 

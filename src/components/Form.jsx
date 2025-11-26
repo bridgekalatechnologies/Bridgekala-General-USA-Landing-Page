@@ -102,7 +102,7 @@ const Form = forwardRef((props, ref) => {
 
         <button
           type="submit"
-          className="w-full text-sm py-3 bg-purple-600 text-white font-semibold rounded-full"
+          className="w-full text-sm py-3 bg-purple-600 text-white font-semibold rounded-full animate-float"
         >
           {loading ? "Booking..." : "Book a Call and Get Answers"}
         </button>

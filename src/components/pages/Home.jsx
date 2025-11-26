@@ -74,7 +74,7 @@ export default function HomePage() {
 
         <button
           onClick={scrollToForm}
-          className="bg-[#9000FF] rounded-xl py-1 text-white font-bold"
+          className="bg-[#9000FF] rounded-xl py-1 text-white font-bold animate-float"
         >
           Book Free Strategy Call
         </button>

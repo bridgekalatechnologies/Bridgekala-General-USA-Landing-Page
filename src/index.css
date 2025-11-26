@@ -40,3 +40,12 @@
     0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 }
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
