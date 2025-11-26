@@ -1,6 +1,64 @@
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
+import { useState } from "react";
 
 export default function OurProjects() {
+  // ARRAY OF OBJECTS
+  const projects = [
+    {
+      title: "Furniture Park",
+      subtitle: "3X Walk-ins",
+      description:
+        "Created a full brand revamp + performance funnel generating consistent showroom traffic.",
+      img: "",
+      video: "",
+    },
+    {
+      title: "Power Chew",
+      subtitle: "UK + Europe Expansion",
+      description:
+        "Complete digital marketing system: branding, ads, content & influencer-led funnel.",
+      img: "",
+      video: "",
+    },
+    {
+      title: "House of Rings",
+      subtitle: "Franchise Growth",
+      description:
+        " Developed ads + content + strategy, helping them expand into multiple locations.",
+      img: "",
+      video: "",
+    },
+    {
+      title: "Dynatone",
+      subtitle: "Product Marketing System",
+      description:
+        "End-to-end content, web, and ads to scale their brand presence.",
+      img: "",
+      video: "",
+    },
+    {
+      title: "New Age Diamonds",
+      subtitle: "Luxury Positioning",
+      description:
+        "Storytelling + campaigns + footfall strategy across all stores.",
+      img: "",
+      video: "",
+    },
+  ];
+
+  // Single index that switches whole project
+  const [projectIndex, setProjectIndex] = useState(0);
+
+  const nextProject = () => {
+    setProjectIndex((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevProject = () => {
+    setProjectIndex((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
+  const current = projects[projectIndex];
+
   return (
     <div className="w-screen p-12 flex flex-col items-center gap-2">
       <div>
@@ -9,23 +67,42 @@ export default function OurProjects() {
           Brands We’ve Scaled
         </h2>
       </div>
+
       <section className="w-full flex flex-col gap-3">
+        {/* Top section */}
         <div className="flex justify-between">
           <div>
-            <h1 className="text-[#9000FF] font-bold">Furniture Park</h1>
-            <h2 className="text-[10px] font-medium">3X Walk-ins</h2>
+            <h1 className="text-[#9000FF] font-bold">{current.title}</h1>
+            <h2 className="text-[10px] font-medium">{current.subtitle}</h2>
           </div>
-          <div className="flex">
-            <CircleArrowLeft /> <CircleArrowRight />
+
+          <div className="flex gap-1">
+            <button onClick={prevProject}>
+              <CircleArrowLeft className="cursor-pointer" />
+            </button>
+            <button onClick={nextProject}>
+              <CircleArrowRight className="cursor-pointer" />
+            </button>
           </div>
         </div>
+
+        {/* IMAGES and VIDEOS */}
         <div className="flex w-full justify-between">
-          <img src="" className="bg-[#d8d8d8] w-33 h-55 rounded-xl" alt="" />
-          <img src="" className="bg-[#d8d8d8] w-33 h-55 rounded-xl" alt="" />
+          <img
+            src={current.img}
+            className="bg-[#d8d8d8] w-33 h-55 rounded-xl"
+            alt=""
+          />
+          <video
+            src={current.img}
+            className="bg-[#d8d8d8] w-33 h-55 rounded-xl"
+            alt=""
+          ></video>
         </div>
+
+        {/* DESCRIPTION */}
         <div className="text-[10px] font-medium text-center">
-          Created a full brand revamp + performance funnel generating consistent
-          showroom traffic.
+          {current.description}
         </div>
       </section>
     </div>

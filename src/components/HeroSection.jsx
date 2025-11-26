@@ -1,6 +1,6 @@
 import CtaBtn from "./CtaBtn";
 
-export default function HeroSection() {
+export default function HeroSection({ onScrollToForm }) {
   return (
     <>
       {/* slots */}
@@ -72,7 +72,7 @@ export default function HeroSection() {
         Trusted by founders of <br /> 20+ breakout D2C brands
       </p>
 
-      <CtaBtn text="Book 4X Strategy Call" link="" />
+      <CtaBtn text="Book 4X Strategy Call" link="" onClick={onScrollToForm} />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutUs() {
+export default function AboutUs({ onScrollToForm }) {
   return (
     <div className="bgGradient w-screen rounded-lg text-white text-center p-5 flex flex-col items-center gap-3">
       <div>
@@ -26,7 +26,7 @@ export default function AboutUs() {
           </span>
         </div>
       </div>
-      <button className="bg-white text-[#9000FF] w-55 font-bold rounded-3xl mt-3">
+      <button onClick={onScrollToForm} className="bg-white text-[#9000FF] w-55 font-bold rounded-3xl mt-3">
         Book Free Strategy Call
       </button>
     </div>

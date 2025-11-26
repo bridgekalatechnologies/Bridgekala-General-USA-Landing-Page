@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 
-export default function Form() {
+const Form = forwardRef((props, ref) => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -20,14 +20,12 @@ export default function Form() {
         "https://script.google.com/macros/s/AKfycbz0G7f2tjbryb27gmNYvrcmnTN4KzHt4I44hEHwH5-PqAth_F3AD7UnpotBcclBWnIX/exec",
         {
           method: "POST",
-          body: formDataToSend, // NO JSON, NO HEADERS → bypasses CORS
+          body: formDataToSend,
         }
       );
 
-      const text = await res.text(); 
-      console.log("Raw response:", text);
+      const text = await res.text();
 
-      // Apps Script returns plain text, not JSON
       if (text.includes("success")) {
         setMessage("Your call is booked! We’ll contact you shortly.");
         e.target.reset();
@@ -43,8 +41,8 @@ export default function Form() {
   };
 
   return (
-    <div className="mt-5 w-full max-w-md mx-auto">
-      <h2 className="text-xl font-bold text-center mb-6">
+    <div ref={ref} className="mt-5 w-full max-w-md mx-auto">
+      <h2 className="text-xl font-bold text-[#9000FF] text-center mb-6">
         Book a Free Strategy Call
       </h2>
 
@@ -115,4 +113,6 @@ export default function Form() {
       )}
     </div>
   );
-}
+});
+
+export default Form;

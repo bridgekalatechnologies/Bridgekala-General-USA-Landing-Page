@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import Performancesection from "../Performancesection";
 import HeroSection from "../HeroSection";
 import WhyChooseUs from "../WhyChooseUs";
@@ -10,16 +12,25 @@ import Testimonials from "../Testimonials";
 import Faqs from "../Faqs";
 import Form from "../Form";
 
-export default function () {
+export default function HomePage() {
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-screen flex flex-col items-center gap-5 p-10 Montserratfont">
-      <HeroSection />
+      <HeroSection onScrollToForm={scrollToForm} />
+
       <Performancesection />
       <WhyChooseUs />
       <HowWeWork />
       <Services />
       <OurProjects />
-      <AboutUs />
+      <AboutUs onScrollToForm={scrollToForm} />
+
+      {/* Your Mid CTA Section */}
       <div className="flex flex-col gap-2">
         <h1 className="text-xl font-bold w-45 leading-5">
           Stop Losing Customers to Better Marketing
@@ -31,39 +42,50 @@ export default function () {
         <div className="bg-[#9000FF] text-white w-35 text-center rounded-xl mt-4">
           We help you:
         </div>
+
         <ul className="text-sm flex flex-col gap-2">
           <li className="flex gap-2">
-            <Check className="size-5" /> Increase leads & enquiries{" "}
+            <Check className="size-5" /> Increase leads & enquiries
           </li>
           <li className="flex gap-2">
-            <Check className="size-5" /> Reduce cost per lead{" "}
+            <Check className="size-5" /> Reduce cost per lead
           </li>
           <li className="flex gap-2">
-            <Check className="size-5" /> Improve conversion rates{" "}
+            <Check className="size-5" /> Improve conversion rates
           </li>
           <li className="flex gap-2">
             <Check className="size-5" /> Boost sales with strong funnels
           </li>
           <li className="flex gap-2">
-            <Check className="size-5" /> Build long-term brand authority{" "}
+            <Check className="size-5" /> Build long-term brand authority
           </li>
         </ul>
       </div>
+
+      {/* CTA Button Section */}
       <div className="mt-5 flex flex-col gap-5">
         <div className="text-center">
           <h1 className="font-bold text-lg leading-4">Ready to Scale</h1>
           <h1 className="font-bold text-2xl text-[#9000FF]">Your Business?</h1>
         </div>
+
         <p className="text-center text-sm w-65">
           Let’s build a marketing system that grows your brand consistently.
         </p>
-        <button className="bg-[#9000FF] rounded-xl py-1 text-white font-bold">
+
+        <button
+          onClick={scrollToForm}
+          className="bg-[#9000FF] rounded-xl py-1 text-white font-bold"
+        >
           Book Free Strategy Call
         </button>
       </div>
+
       <Testimonials />
       <Faqs />
-      <Form />
+
+      {/* Attach ref here */}
+      <Form ref={formRef} />
     </div>
   );
 }
