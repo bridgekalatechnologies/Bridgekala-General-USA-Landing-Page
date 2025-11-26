@@ -5,6 +5,7 @@ import Services from "../Services";
 import HowWeWork from "../HowWeWork";
 import OurProjects from "../OurProjects";
 import AboutUs from "../AboutUs";
+import { AppleCardsCarouselDemo } from "../AppleCardsCarouselDemo";
 
 export default function () {
   return (
@@ -16,6 +17,7 @@ export default function () {
       <HowWeWork />
       <OurProjects />
       <AboutUs />
+      <AppleCardsCarouselDemo />
     </div>
   );
 }
