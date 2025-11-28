@@ -4,8 +4,8 @@ export default function HowWeWork() {
   return (
     <div className="text-center flex flex-col gap-5">
       <div>
-        <h1 className="text-[#9000FF] font-bold text-2xl">HOW WE WORK</h1>
-        <h2 className="text-[11px] font-medium">
+        <h1 className="text-[#9000FF] font-bold text-[27px]">HOW WE WORK</h1>
+        <h2 className="text-[12px] font-medium">
           Our Simple 4-Step Growth System
         </h2>
       </div>

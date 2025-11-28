@@ -16,7 +16,7 @@ export default function Services() {
 
   return (
     <div className="text-center bgGradient text-white w-screen rounded-lg p-5 flex flex-col gap-4">
-      <h1 className="font-bold text-2xl">
+      <h1 className="font-bold text-[27px]">
         We Don't Sell Services. <br /> We Sell Results.
       </h1>
       <h2 className="text-[12px]">But if you really want a list…</h2>

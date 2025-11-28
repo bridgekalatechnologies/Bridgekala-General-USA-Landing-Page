@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
   ];
   return (
     <div className="text-center">
-      <h1 className="font-bold text-2xl">Why Choose Us</h1>
+      <h1 className="font-bold text-[27px]">Why Choose Us</h1>
       <h2 className="text-[#9000FF] text-[12px] font-medium">
         Trusted by Brands Across India & Abroad
       </h2>

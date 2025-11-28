@@ -4,10 +4,10 @@ export default function AboutUs({ onScrollToForm }) {
   return (
     <div className="bgGradient w-screen rounded-lg text-white text-center p-5 flex flex-col items-center gap-3">
       <div>
-        <h1 className="font-bold text-2xl leading-6">About Us</h1>
+        <h1 className="font-bold text-[27px] leading-6">About Us</h1>
       </div>
       <img className="bg-gray-300 w-65 h-40 rounded-lg" src="" alt="" />
-      <div className="px-10 text-[9px] text-left flex flex-col gap-2">
+      <div className="px-7 text-[12px] text-left flex flex-col gap-2">
         <div>
           Every great business begins with a spark — an idea, a purpose, a
           dream. But somewhere along the journey, most founders hit the same

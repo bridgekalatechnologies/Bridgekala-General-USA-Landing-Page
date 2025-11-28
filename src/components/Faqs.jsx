@@ -64,7 +64,7 @@ export default function Faqs() {
   return (
     <div className="flex flex-col gap-5">
       <div className="text-center">
-        <h1 className="font-bold text-2xl leading-5">FAQ</h1>
+        <h1 className="font-bold text-[27px] leading-5">FAQ</h1>
         <h2 className="text-[#9000FF] text-[12px] font-medium">
           What Our Clients Say
         </h2>

@@ -62,7 +62,7 @@ export default function OurProjects() {
   return (
     <div className="w-screen p-12 flex flex-col items-center gap-2">
       <div>
-        <h1 className="font-bold text-2xl text-black">OUR PROJECTS</h1>
+        <h1 className="font-bold text-[27px] text-black">OUR PROJECTS</h1>
         <h2 className="text-center text-[12px] text-[#9000FF]">
           Brands We’ve Scaled
         </h2>

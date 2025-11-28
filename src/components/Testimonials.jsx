@@ -11,8 +11,8 @@ export default function Testimonials() {
   return (
     <div className="bgGradient w-screen rounded-lg p-10">
       <div className="text-white text-center">
-        <h1 className="font-bold text-2xl leading-4">TESTIMONIALS</h1>
-        <h2 className="text-[13px]">What Our Clients Say</h2>
+        <h1 className="font-bold text-[27px] leading-5">TESTIMONIALS</h1>
+        <h2 className="text-[14px]">What Our Clients Say</h2>
       </div>
 
       <div className="w-full flex justify-center pt-5 gap-8 items-center">
