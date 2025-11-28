@@ -30,7 +30,7 @@ export default function HeroSection({ onScrollToForm }) {
       {/* hero image */}
       <img
         className="bg-[#d8d3d3] w-full h-50 rounded-2xl"
-        src="/heroimg.jpg"
+        src="/heroimg.webp"
         alt="Hero"
       />
 

@@ -9,40 +9,40 @@ export default function OurProjects() {
       subtitle: "UK + Europe Expansion",
       description:
         "Complete digital marketing system: branding, ads, content & influencer-led funnel.",
-      img: "/projects/powerchew.png",
-      video: "/projects/powerchew.mp4",
+      img: "/projects/powerchew.webp",
+      video: "/projects/powerchew.webm",
     },
     {
       title: "Grandma Secret Recipe",
       subtitle: "4X ROI Capital",
       description:
         "Revamped the brand and built a performance funnel that delivers consistent sales growth.",
-      img: "/projects/grandma.png",
-      video: "/projects/grandma.mp4",
+      img: "/projects/grandma.webp",
+      video: "/projects/grandma.webm",
     },
     {
       title: "House of Rings",
       subtitle: "Franchise Growth",
       description:
         " Developed ads + content + strategy, helping them expand into multiple locations.",
-      img: "/projects/hor.png",
-      video: "/projects/hor.mp4",
+      img: "/projects/hor.webp",
+      video: "/projects/hor.webm",
     },
     {
       title: "Dynatone",
       subtitle: "Product Marketing System",
       description:
         "End-to-end content, web, and ads to scale their brand presence.",
-      img: "/projects/dynatone.png",
-      video: "/projects/dynatone.mp4",
+      img: "/projects/dynatone.webp",
+      video: "/projects/dynatone.webm",
     },
     {
       title: "New Age Diamonds",
       subtitle: "Luxury Positioning",
       description:
         "Storytelling + campaigns + footfall strategy across all stores.",
-      img: "/projects/newage.png",
-      video: "/projects/newage.mp4",
+      img: "/projects/newage.webp",
+      video: "/projects/newage.webm",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function OurProjects() {
           />
           <video
             src={current.video}
-            className="bg-[#d8d8d8] w-33 h-55 rounded-xl"
+            className="bg-[#d8d8d8] w-33 h-55 rounded-xl object-cover"
             alt=""
             autoPlay
             muted
