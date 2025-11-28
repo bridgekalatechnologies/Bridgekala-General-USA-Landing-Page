@@ -8,6 +8,21 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 export default function Testimonials() {
   const swiperRef = useRef(null);
 
+  const testimonials = [
+    {
+      msg: "“We tripled our walk-ins in 45 days. BridgeKala became our marketing backbone.”",
+      person: "– Founder, House of Rings",
+    },
+    {
+      msg: "“Our entire brand identity & social media got transformed. Sales increased visibly.”",
+      person: "– Founder, Designer Den",
+    },
+    {
+      msg: "“BridgeKala handles everything — scripts, shoots, ads, website. No stress.”",
+      person: "– Owner, Furniture Park",
+    },
+  ];
+
   return (
     <div className="bgGradient w-screen rounded-lg p-10">
       <div className="text-white text-center">
@@ -37,17 +52,14 @@ export default function Testimonials() {
             slideShadows: true,
           }}
         >
-          {Array(4)
-            .fill(0)
-            .map((_, i) => (
+          {testimonials.map((testimonial, i) => {
+            return (
               <SwiperSlide key={i} className="bg-white rounded-xl p-5">
-                <div className="font-medium text-[15px]">
-                  “We tripled our walk-ins in 45 days. BridgeKala became our
-                  marketing backbone.”
-                </div>
-                <h1 className="text-[10px]">— Founder, House of Rings</h1>
+                <div className="font-medium text-[15px]">{testimonial.msg}</div>
+                <h1 className="text-[10px]">{testimonial.person}</h1>
               </SwiperSlide>
-            ))}
+            );
+          })}
         </Swiper>
 
         {/* RIGHT BTN */}

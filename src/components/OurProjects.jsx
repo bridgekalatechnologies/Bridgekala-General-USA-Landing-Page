@@ -16,7 +16,7 @@ export default function OurProjects() {
       title: "Grandma Secret Recipe",
       subtitle: "4X ROI Capital",
       description:
-        "Created a full brand revamp + performance funnel generating consistent showroom traffic.",
+        "Revamped the brand and built a performance funnel that delivers consistent sales growth.",
       img: "/projects/grandma.png",
       video: "/projects/grandma.mp4",
     },
