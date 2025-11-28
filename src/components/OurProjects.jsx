@@ -11,6 +11,7 @@ export default function OurProjects() {
         "Complete digital marketing system: branding, ads, content & influencer-led funnel.",
       img: "/projects/powerchew.webp",
       video: "/projects/powerchew.webm",
+      poster: "/posters/powerchew.webp",
     },
     {
       title: "Grandma Secret Recipe",
@@ -19,6 +20,7 @@ export default function OurProjects() {
         "Revamped the brand and built a performance funnel that delivers consistent sales growth.",
       img: "/projects/grandma.webp",
       video: "/projects/grandma.webm",
+      poster: "/posters/grandma.webp",
     },
     {
       title: "House of Rings",
@@ -27,6 +29,7 @@ export default function OurProjects() {
         " Developed ads + content + strategy, helping them expand into multiple locations.",
       img: "/projects/hor.webp",
       video: "/projects/hor.webm",
+      posters: "/posters/hor.webp",
     },
     {
       title: "Dynatone",
@@ -35,6 +38,7 @@ export default function OurProjects() {
         "End-to-end content, web, and ads to scale their brand presence.",
       img: "/projects/dynatone.webp",
       video: "/projects/dynatone.webm",
+      poster: "/posters/dynatone.webp",
     },
     {
       title: "New Age Diamonds",
@@ -43,6 +47,7 @@ export default function OurProjects() {
         "Storytelling + campaigns + footfall strategy across all stores.",
       img: "/projects/newage.webp",
       video: "/projects/newage.webm",
+      poster: "/posters/newage.webp",
     },
   ];
 
@@ -102,6 +107,7 @@ export default function OurProjects() {
             playsInline
             webkit-playsinline
             controls={false}
+            poster={current.poster}
           ></video>
         </div>
 
