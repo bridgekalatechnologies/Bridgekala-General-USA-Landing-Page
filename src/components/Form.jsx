@@ -1,8 +1,10 @@
 import React, { useState, forwardRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Form = forwardRef((props, ref) => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,8 +29,9 @@ const Form = forwardRef((props, ref) => {
       const text = await res.text();
 
       if (text.includes("success")) {
-        setMessage("Your call is booked! We’ll contact you shortly.");
         e.target.reset();
+        // Navigate to thank you page
+        navigate("/thank-you");
       } else {
         setMessage("Something went wrong. Try again!");
       }

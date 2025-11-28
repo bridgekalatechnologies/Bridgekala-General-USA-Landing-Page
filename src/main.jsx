@@ -9,12 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./components/pages/Home.jsx";
+import ThankYou from "./components/pages/ThankYou.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<App />}>
       <Route path="" element={<Home />}></Route>
-      <Route path="" element={<Home />}></Route>
+      <Route path="/thank-you" element={<ThankYou />}></Route>
     </Route>
   )
 );
